@@ -15,10 +15,10 @@ public class Login4 {
 		
 		driver.manage().window().maximize();
 		WebElement username = driver.findElement(By.name("user-name"));
-		username.sendKeys("performance_glitch_user");
+		username.sendKeys(" ");
 		
 		WebElement password = driver.findElement(By.id("password"));
-		password.sendKeys("secret_sauce");
+		password.sendKeys(" ");
 		
 	
 		WebElement button = driver.findElement(By.xpath("//*[@id=\"login-button\"]"));

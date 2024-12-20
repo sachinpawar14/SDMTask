@@ -5,7 +5,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Login2 {
+public class Login6 {
 
 	public static void main(String[] args) {
 		WebDriverManager.edgedriver().setup();
@@ -15,13 +15,14 @@ public class Login2 {
 		
 		driver.manage().window().maximize();
 		WebElement username = driver.findElement(By.name("user-name"));
-		username.sendKeys("locked_123");
+		username.sendKeys("gfsjdhfgsj");
 		
 		WebElement password = driver.findElement(By.id("password"));
-		password.sendKeys("secret_sauce");
+		password.sendKeys("\"secret_sauce\"");
 		
 	
 		WebElement button = driver.findElement(By.xpath("//*[@id=\"login-button\"]"));
 		button.click();
 	}
+
 }
